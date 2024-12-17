@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stlyehobby.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="background-audio" loop>
+        <source src="audios/background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const audio = document.getElementById("background-audio");
+            audio.play().catch(() => console.warn("Autoplay blocked. User interaction required."));
+        });
+    </script>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                    Personal <span>Website</span>
+                </div>
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About Me</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="education.html">Education</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="hobby.html">Hobby</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="family.html">Family</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="mygallery.html">My Gallery</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contactme.html">Contact Me</a></div>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Me</a>
+                    <a href="education.html">Education</a>
+                    <a href="hobby.html">Hobby</a>
+                    <a href="family.html">Family</a>
+                    <a href="mygallery.html">My Gallery</a>
+                    <a href="contactme.html">Contact Me</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="main-container">
+            <article class="content">
+                <!-- Table with Content Rows -->
+                <table style="width: 90%; margin: auto;">
+                    <!-- Row 1: Image and Description -->
+                    <tr>
+                        <td style="width: 50%;">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/hobby1.jpg" alt="An illustrative image about hobbies" style="width: 100%; max-width: 300px; height: auto;">
+                            </div>
+                        </td>
+                        <td style="width: 50%; text-align: center; vertical-align: middle;">
+                            <div class="description" data-aos="zoom-in" data-aos-duration="3000">
+                                <h2>
+                                    <span class="highlight-white">My</span>
+                                    <span class="highlight-green">Hobby</span>
+                                </h2>
+                                <p>
+                                    One of my favorite hobbies is playing games, especially those about Spider-Man. 
+                                    I've always loved immersing myself in his world, swinging through New York City, 
+                                    and battling iconic villains like Green Goblin and Doctor Octopus. It’s a thrilling 
+                                    experience that allows me to feel like a hero.
+                                    Beyond gaming, my passion for Spider-Man extends to attending themed events and collecting comics.
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 2: Full-Width Image -->
+                    <tr>
+                        <td colspan="2" style="padding: 20px 0; text-align: center;">
+                            <div class="description" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/home2.jpg" alt="Website Overview" style="width: 1000%; max-width: 800px; height: 20px; border-radius: 10px;">
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Row 3: Description and Video -->
+                    <tr>
+                        <td style="text-align: center; vertical-align: middle;">
+                            <div class="description" data-aos="zoom-in" data-aos-duration="3000">
+                                <h2>
+                                    <span class="highlight-white">My Gameplay</span>
+                                    <span class="highlight-green">Of Spiderman</span>
+                                </h2>
+                                <p>
+                                    Since I enjoy staying at home, I love playing games that let me immerse myself in 
+                                    exciting worlds. One of my favorite characters is Spider-Man, and Marvel’s Rivals 
+                                    gives me the chance to control him in thrilling adventures. Spider-Man has been an
+                                    inspiration to me since childhood, with his resilience and ability to balance his 
+                                    superhero life with personal struggles. His story has always taught me valuable lessons 
+                                    about responsibility and perseverance.Here some of my gameplay using the character.
+                                </p>
+                            </div>
+                        </td>
+                        <td style="text-align: center;">
+                            <video controls style="width: 100%; max-width: 400px; height: auto; border-radius: 10px;" data-aos="zoom-in" data-aos-duration="3000">
+                                <source src="videos/gameplay.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding: 20px 0; text-align: center;">
+                            <div class="description" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/home2.jpg" alt="Website Overview" style="width: 1000%; max-width: 800px; height: 20px; border-radius: 10px;">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 50%;">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/hobby2.jpg" alt="An illustrative image about hobbies" style="width: 100%; max-width: 300px; height: auto;">
+                            </div>
+                        </td>
+                        <td style="width: 50%; text-align: center; vertical-align: middle;">
+                            <div class="description" data-aos="zoom-in" data-aos-duration="3000">
+                                <h2>
+                                    <span class="highlight-white">Joining</span>
+                                    <span class="highlight-green">Events</span>
+                                </h2>
+                                <p>
+                                    I’ve always had a deep love for Spider-Man, so when the opportunity arose, I couldn’t resist the chance to 
+                                    bring my favorite hero to life by doing a Spider-Man cosplay. It was an amazing experience, and what made 
+                                    it even better was that it took place during a Marvel event at Toy R Us. The atmosphere was electric, filled 
+                                    with excitement as fans of all ages gathered to celebrate everything Marvel. As I suited up in my Spider-Man 
+                                    costume, I felt an incredible sense of pride. It was like stepping into the shoes of a superhero, embodying 
+                                    the spirit of Spider-Man and getting to interact with other Marvel fans who shared the same passion.
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <!-- Disclaimer Section -->
+        <div class="disclaimer">
+            <p>
+                <strong>Disclaimer:</strong> The content provided on this website is for informational purposes only. The views and opinions expressed are those of the author and do not necessarily reflect the official policy or position of any organization. All content is accurate to the best of the author's knowledge, but no guarantee is provided.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

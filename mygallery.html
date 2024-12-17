@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylemygallery.css">
+    <title>My Gallery</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                    Personal <span>Website</span>
+                </div>
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About Me</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="education.html">Education</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="hobby.html">Hobby</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="family.html">Family</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a href="mygallery.html">My Gallery</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700"><a href="contactme.html">Contact Me</a></div>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Me</a>
+                    <a href="education.html">Education</a>
+                    <a href="hobby.html">Hobby</a>
+                    <a href="family.html">Family</a>
+                    <a href="mygallery.html">My Gallery</a>
+                    <a href="contactme.html">Contact Me</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Gallery Section -->
+    <main>
+        <section class="content">
+            <div class="description" data-aos="zoom-in" data-aos-duration="1500">
+                <h1>My <span class="highlight-green">Gallery</span></h1>
+                <div class="gallery-container">
+                    <!-- Row 1 -->
+                    <!-- Row 2 -->
+                    <div class="gallery-row">
+                        <div class="gallery-item">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/g5.jpg" alt="Image 5">
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/g6.jpg" alt="Image 6">
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/g7.jpg" alt="Image 7">
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/g8.jpg" alt="Image 8">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 3 -->
+                    <div class="gallery-row">
+                        <div class="gallery-item">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/g9.jpg" alt="Image 9">
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/g10.jpg" alt="Image 10">
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/g11.jpg" alt="Image 11">
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/g12.jpg" alt="Image 12">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 4 -->
+                    <!-- Row 5 -->
+                    <div class="gallery-row">
+                        <div class="gallery-item">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/g17.jpg" alt="Image 17">
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/g18.jpg" alt="Image 18">
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/g19.jpg" alt="Image 19">
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/g20.jpg" alt="Image 20">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-row">
+                        <div class="gallery-item">
+                            <div class="video" data-aos="zoom-in" data-aos-duration="3000">
+                                <video controls>
+                                    <source src="videos/g1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="video" data-aos="zoom-in" data-aos-duration="3000">
+                                <video controls>
+                                    <source src="videos/g2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="video" data-aos="zoom-in" data-aos-duration="3000">
+                                <video controls>
+                                    <source src="videos/g3.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="video" data-aos="zoom-in" data-aos-duration="3000">
+                                <video controls>
+                                    <source src="videos/g4.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+        </section>
+    </main>
+
+    <!-- Disclaimer Section -->
+    <div class="disclaimer">
+        <p><strong>Disclaimer:</strong> The content provided on this website is for informational purposes only. The views and opinions expressed are those of the author and do not necessarily reflect the official policy or position of any organization. All content is accurate to the best of the author's knowledge, but no guarantee is provided.</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

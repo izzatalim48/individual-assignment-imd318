@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    <style>
+        /* Remove this line to show the audio element */
+        /* audio { display: none; } */
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Personal <span>Website</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About Me</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="education.html">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="hobby.html">Hobby</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="family.html">Family</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="mygallery.html">My Gallery</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contactme.html">Contact Me</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="education.html">Education</a>
+                <a href="hobby.html">Hobby</a>
+                <a href="family.html">Family</a>
+                <a href="mygallery.html">My Gallery</a>
+                <a href="contactme.html">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section>
+        <div class="main-container">
+            <div class="content">
+                <table style="width:95%">
+                    <!-- First Row: Image on left, description on right -->
+                    <tr>
+                        <td style="width: 40%; justify-content: center; text-align: center;">
+                            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                                <img src="images/home1.jpg" alt="Profile Image" style="width:400px;height:500px;">
+                        </td>
+                        <td class="description" style="text-align: center; vertical-align: middle;">
+                            <div class="description" data-aos="zoom-in" data-aos-duration="3000">
+                                <h2>
+                                    <span style="font-size: 50px;">Welcome To </span>
+                                    <span style="color: #3cb371; font-size: 50px;">My Website</span>
+                                </h2>
+                                <p>
+                                    Hi, my name is Muhammad Izzat Ali! Welcome to my website, where I’ll share a little bit about myself,
+                                    my passions, and the things that make me who I am. Through this platform, I hope to give you a glimpse into
+                                    my journey, interests, and aspirations. Whether you're here to learn more about me, connect, or just explore,
+                                    I hope you enjoy your time here and leave knowing a bit more about who I am. Let's get started!
+                                </p>
+                        </td>
+                    </tr>
+                    <!-- Second Row: Combined columns for extended description -->
+                    <tr>
+                        <td colspan="2" class="description" style="text-align: center; vertical-align: middle; justify-content: center;">
+                            <div class="description" data-aos="zoom-in" data-aos-duration="3000">
+                                <!-- Image Section -->
+                                <img src="images/home2.jpg" alt="Website Overview" style="width:1000px;height:20px;">
+
+                                <!-- Text Content -->
+                                <h2>What’s In <span style="color: #3cb371;">My Website?</span></h2>
+                                <p>
+                                    In this space, you’ll get to know more About Me, my Education, my Hobbies, and of course, my Family.
+                                    These are some of the most important parts of my life, and I’m happy to let you in on them.
+                                    I’ll be honest, I’m not much of a “picture person,” so you might not find tons of flashy photos here.
+                                    But everything you’ll read and see comes straight from me, in my own words—simple and authentic.
+                                    Oh, and before we dive in, I want to share something special with you. Below, I’ve included one of
+                                    my all-time favorite songs. It’s a track that I absolutely love, and I hope you’ll give it a listen.
+                                    Who knows? Maybe you’ll end up loving it as much as I do!
+                                    So, let’s get started. I hope you enjoy exploring this little window into my life and get to know me a bit better along the way!
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Third Row: Audio Element -->
+                    <tr>
+                        <td colspan="2" class="audio-container" style="text-align: center;">
+                            <h2>Listen to My Story</h2>
+                            <audio controls>
+                                <source src="audios/favsong.mp3" type="audio/mp3">
+                                Your browser does not support the audio tag.
+                            </audio>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

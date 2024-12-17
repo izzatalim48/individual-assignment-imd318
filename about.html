@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="stylefamily.css"> <!-- Updated to match the first file's CSS -->
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="background-audio" loop>
+        <source src="audios/background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Play audio after the page has loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            const audio = document.getElementById("background-audio");
+            audio.play().catch((error) => {
+                console.warn("Autoplay blocked. User interaction required.");
+            });
+        });
+    </script>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Personal <span>Website</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About Me</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="education.html">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="hobby.html">Hobby</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="family.html">Family</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="mygallery.html">My Gallery</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contactme.html">Contact Me</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="education.html">Education</a>
+                <a href="hobby.html">Hobby</a>
+                <a href="family.html">Family</a>
+                <a href="mygallery.html">My Gallery</a>
+                <a href="contactme.html">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section style="text-align: center;">
+        <div class="main-container" style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px;">
+            <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+                <img src="images/about7.jpg" alt="Profile Image" style="width: 300px; height: 420px;">
+            </div>
+        </div>
+
+        <!-- Biodata Section -->
+        <div class="description" data-aos="zoom-in" data-aos-duration="3000" style="text-align: center; padding: 20px;">
+            <h2>
+                <span style="color: white;">My</span>
+                <span style="color: #3cb371;">Biodata</span>
+            </h2>
+            <table style="margin: 20px auto; border-collapse: collapse; width: 80%; background-color: #333; color: white; text-align: left; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);">
+                <tr style="background-color: #444;">
+                    <th style="padding: 10px; border: 1px solid #555; color: #3cb371; text-align: center;">Details</th>
+                    <th style="padding: 10px; border: 1px solid #555; color: #3cb371; text-align: center;">Information</th>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #555; text-align: center;">Full Name</td>
+                    <td style="padding: 10px; border: 1px solid #555; text-align: center;">Muhammad Izzat Ali Bin Shamsir Ali</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #555; text-align: center;">Age</td>
+                    <td style="padding: 10px; border: 1px solid #555; text-align: center;">20</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #555; text-align: center;">Birthday</td>
+                    <td style="padding: 10px; border: 1px solid #555; text-align: center;">10/03/2004</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #555; text-align: center;">Birth Place</td>
+                    <td style="padding: 10px; border: 1px solid #555; text-align: center;">Pulau Pinang</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #555; text-align: center;">Status</td>
+                    <td style="padding: 10px; border: 1px solid #555; text-align: center;">Single</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #555; text-align: center;">Current Occupation</td>
+                    <td style="padding: 10px; border: 1px solid #555; text-align: center;">Student</td>
+                </tr>
+            </table>
+
+
+        </div>
+    </section>
+
+
+    <!-- Image and Description Section -->
+    <table style="width: 80%; margin: 0px auto; border-spacing: 0; background: transparent; justify-content: center;">
+        <tr>
+            <!-- Column 1: Images (Side by side) -->
+            <td style="width: 50%; vertical-align: top; padding: 0;">
+                <div style="display: flex; flex-direction: row; gap: 20px;">
+                    <div class="family-images-container" data-aos="fade-up" data-aos-duration="2000" style="display: flex; justify-content: space-between; gap: 20px;">
+                        <div class="image-column" style="text-align: center;">
+                            <img src="images/about1.jpg" alt="Image 1" style="width: 100%; max-width: 250px;">
+                            <p></p>
+                        </div>
+                        <div class="image-column" style="text-align: center;">
+                            <img src="images/aboutempat.jpg" alt="Image 2" style="width: 100%; max-width: 250px;">
+                            <p></p>
+                        </div>
+                        <div class="image-column" style="text-align: center;">
+                            <img src="images/about3.jpg" alt="Image 3" style="width: 100%; max-width: 250px;">
+                            <p></p>
+                        </div>
+                        <div class="image-column" style="text-align: center;">
+                            <img src="images/about6.jpg" alt="Image 4" style="width: 100%; max-width: 250px;">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <td style="width: 50%; text-align: center; vertical-align: middle;">
+            <div class="description" data-aos="zoom-in" data-aos-duration="3000">
+                <h2>
+                    <span class="highlight-white">Whats</span>
+                    <span class="highlight-green">About Me</span>
+                </h2>
+                <p>
+                    I was born in Penang, and I’m currently 20 years old. I’m a student who
+                    enjoys doing things alone, as I find peace and clarity when I’m by myself.
+                    Being alone allows me to focus on my personal interests and unwind without
+                    distractions. Although I’m generally quiet and reserved, I open up and talk a
+                    lot when I feel comfortable with someone.
+                    I’ve often been told that I come across as arrogant, but in reality, I’m just
+                    shy. I tend to be cautious around new people and take time to feel at ease.
+                    Once I do, I’m much more talkative and open.
+                </p>
+            </div>
+        </td>
+        <tr>
+            <td style="text-align: center;">
+                <video controls style="width: 100%; max-width: 400px; height: auto; border-radius: 10px;" data-aos="zoom-in" data-aos-duration="3000">
+                    <source src="videos/about.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        <tr>
+            <td colspan="2" class="audio-container" style="text-align: center;">
+                <h2>Background Music</h2>
+                <audio controls>
+                    <source src="audios/background.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>Disclaimer:</strong> The content provided on this website is for informational purposes only.
+                    The views and opinions expressed are those of the author and do not necessarily reflect the official
+                    policy or position of any organization. All content is accurate to the best of the author's knowledge, but no guarantee is provided.
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script src="script.js"></script>
+    <script>
+    </script>
+</body>
+</html>
